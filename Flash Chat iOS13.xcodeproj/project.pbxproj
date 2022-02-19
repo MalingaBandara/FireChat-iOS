@@ -23,6 +23,7 @@
 		4C228553277D3DCC00C54392 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C228552277D3DCC00C54392 /* Message.swift */; };
 		4C8BC615279778DF0093B826 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8BC614279778DF0093B826 /* IQKeyboardManagerSwift */; };
 		4CB2435E2766201B0033FB51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2435D2766201B0033FB51 /* Constants.swift */; };
+		4CD66CCB27C13F3F00C1796A /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 4CD66CCA27C13F3F00C1796A /* Algorithms */; };
 		A48844DE999241DF3260F95B /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A43C0A0D5DE11D81C7A1760 /* Pods_Flash_Chat_iOS13.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD66CCB27C13F3F00C1796A /* Algorithms in Frameworks */,
 				A48844DE999241DF3260F95B /* Pods_Flash_Chat_iOS13.framework in Frameworks */,
 				4C8BC615279778DF0093B826 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -164,6 +166,7 @@
 			name = "Flash Chat iOS13";
 			packageProductDependencies = (
 				4C8BC614279778DF0093B826 /* IQKeyboardManagerSwift */,
+				4CD66CCA27C13F3F00C1796A /* Algorithms */,
 			);
 			productName = "Flash Chat iOS13";
 			productReference = 0B628173235DEE8100E35CAF /* Flash Chat iOS13.app */;
@@ -195,6 +198,7 @@
 			mainGroup = 0B62816A235DEE8100E35CAF;
 			packageReferences = (
 				4C8BC613279778DF0093B826 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				4CD66CC927C13F3F00C1796A /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
@@ -488,6 +492,14 @@
 				minimumVersion = 6.5.0;
 			};
 		};
+		4CD66CC927C13F3F00C1796A /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -495,6 +507,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4C8BC613279778DF0093B826 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		4CD66CCA27C13F3F00C1796A /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CD66CC927C13F3F00C1796A /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
