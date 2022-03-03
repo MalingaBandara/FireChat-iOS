@@ -71,6 +71,9 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async { // load code lines main thread(do firstly) in this method
                                 self.tableView.reloadData() // to reload data
+                                
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0) // this line for give the raw path want to scroll
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)// this line for to scroll
                             }
                             
                             
@@ -105,6 +108,12 @@ class ChatViewController: UIViewController {
                     print("There was an issue saveing data to firestore, \(e)")
                 }else{
                     print("Successfully saved data.")
+                    
+                    DispatchQueue.main.async { // sync to Main Thread
+                        
+                        self.messageTextfield.text =  "" // to clear msg text box after send message
+                        
+                    }
                 }
             }
             
