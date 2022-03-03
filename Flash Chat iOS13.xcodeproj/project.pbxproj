@@ -199,6 +199,7 @@
 			packageReferences = (
 				4C8BC613279778DF0093B826 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				4CD66CC927C13F3F00C1796A /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				4CC3C6F027D10E1100473330 /* XCRemoteSwiftPackageReference "CLTypingLabel" */,
 			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
@@ -490,6 +491,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.5.0;
+			};
+		};
+		4CC3C6F027D10E1100473330 /* XCRemoteSwiftPackageReference "CLTypingLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cl7/CLTypingLabel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
 			};
 		};
 		4CD66CC927C13F3F00C1796A /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
