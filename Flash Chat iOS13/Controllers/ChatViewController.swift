@@ -38,19 +38,21 @@ class ChatViewController: UIViewController {
     func loadMessages(){ // to get previous messages
         
         // ******************** 🔴 get data from firestore🔴 ********************
-        // db.collection(K.FStore.collectionName).order(by: K.FStore.dateField).addSnapshotListener { QuerySnapshot, error in }// 🔰  FierStore retriven 🔰
+        // db.collection(K.FStore.collectionName).order(by: K.FStore.dateField).addSnapshotListener { QuerySnapshot, error in // 🔰 Start of Closures 🔰
         
         db.collection(K.FStore.collectionName) // db colection name
             .order(by: K.FStore.dateField) // set data stroe in order by time
             .addSnapshotListener { QuerySnapshot, error in                              // 🔰 Start of Closures 🔰
-
+           
+        
             self.messages = [] // cleare messages array
             
             // remove optionals using if conditions
             if let e = error { // check is there have any error in data retrieve from fierstore
                 print("There was an issue retrieving data form  Firestore. \(e)") // print error
                 }
-             
+            
+ 
             //  👉 without any errors in data retrieve from fierstore  👇
             else{
                 
@@ -69,10 +71,6 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async { // load code lines main thread(do firstly) in this method
                                 self.tableView.reloadData() // to reload data
-                                
-                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0) // this line for give the raw path want to scroll
-                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true) // this line for to scroll
-                                
                             }
                             
                             
@@ -83,8 +81,11 @@ class ChatViewController: UIViewController {
                 } // ``````````````````````````````````````````````````````````````````````````````````````````````````` 🟡
                 
             }  // 👉 ...............############################............... 👆
+            
+            
         }                                                                             // 🔰 End of Closures 🔰
         // ******************** 🔴 .............. 🔴 ********************
+
     }
     
     
@@ -104,14 +105,6 @@ class ChatViewController: UIViewController {
                     print("There was an issue saveing data to firestore, \(e)")
                 }else{
                     print("Successfully saved data.")
-                    
-                    
-                    DispatchQueue.main.async { // sync to Main Thread
-                        
-                        self.messageTextfield.text = "" // to clear msg text box after send message
-                        
-                    }
-                    
                 }
             }
             
