@@ -13,6 +13,11 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: CLTypingLabel!
     
+    //To hide navigation bar
+    override func viewWillAppear(_ animated: Bool) {
+        <#code#>
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
