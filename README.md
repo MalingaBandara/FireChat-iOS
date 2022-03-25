@@ -1,5 +1,7 @@
 # Flash-Chat
 
+<h3>Flash Chat</h3>
+<img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/chat.gif" width="150vh" >
 
 <b>Screenshots</b>
 
@@ -14,5 +16,4 @@
  <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/login.png" width="150vh" >
 
 <h4>04). Chat</h4>
-<img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/chat.gif" width="150vh" >
 <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/%20Chat.png" width="150vh" >
