@@ -1,5 +1,12 @@
 # Flash-Chat
 
+<h4>⚫️ This is simple chat app</h4>
+
+- [Work Gif](README.md#flash-chat-1)
+- [Main Screen](README.md#01-main-screen)
+- [Register Screen](README.md#02-register-screen)
+- [Chat Screen](README.md#04-chat)
+
 <h3>Flash Chat</h3>
 <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/chat.gif" width="25%" >
 
