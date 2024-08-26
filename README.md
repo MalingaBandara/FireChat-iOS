@@ -54,18 +54,22 @@ FireChat is a real-time chat application for iOS built using Swift and Firebase.
 
 Here are some screenshots showing the key features and output of the application:
 
-1. **Main Screen**:
-   <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/main.png" width="25%" >
+
    <h4>01). Main Screen</h4>
+ <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/main.png" width="25%" >
 
-2. **Register Screen**:
-   <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/reg.png" width="25%" >
 
-3. **Login Screen**:
-   <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/login.png" width="25%" >
+<h4>02). Register Screen</h4>
+ <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/reg.png" width="25%" >
 
-4. **Chat Screen**:
-   <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/%20Chat.png" width="25%" >
+<h4>03). Login Screen</h4>
+ <img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/login.png" width="25%" >
+
+<h4>04). Chat</h4>
+<img src="https://github.com/MalingaBandara/FireChat-iOS/blob/main/%20Chat.png" width="25%" >
+
+
+
 
 ## How to Run the Project
 
